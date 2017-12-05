@@ -90,7 +90,7 @@ namespace PopreceiptSample
             CloudTable table = await CreateTableAsync();
 
             // Face API Client
-            FaceServiceClient faceClient = new FaceServiceClient(CloudConfigurationManager.GetSetting("FaceAPIKey"));
+            FaceServiceClient faceClient = new FaceServiceClient(CloudConfigurationManager.GetSetting("FaceAPIKey"),CloudConfigurationManager.GetSetting("APIroot"));
 
             try
             {
